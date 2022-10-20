@@ -285,15 +285,15 @@ public class PlantsListener implements Listener {
     }
 
     private boolean isFlat(Block current) {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                for (int k = 0; k < 6; k++) {
-                    if (current.getRelative(i, k, j).getType().isSolid() || Tag.LEAVES.isTagged(current.getRelative(i, k, j).getType()) || !current.getRelative(i, -1, j).getType().isSolid()) {
-                        return false;
-                    }
-                }
-            }
-        }
+        // for (int i = 0; i < 5; i++) {
+        //     for (int j = 0; j < 5; j++) {
+        //         for (int k = 0; k < 6; k++) {
+        //             if (current.getRelative(i, k, j).getType().isSolid() || Tag.LEAVES.isTagged(current.getRelative(i, k, j).getType()) || !current.getRelative(i, -1, j).getType().isSolid()) {
+        //                 return false;
+        //             }
+        //         }
+        //     }
+        // }
 
         return true;
     }
